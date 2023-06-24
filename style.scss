@@ -1,0 +1,247 @@
+body {
+  font-family: "Nunito";
+}
+
+.top-navbar {
+  max-width: 375px;
+  width: 100%;
+  height: 60px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0c4b35;
+}
+
+.top-navbar-text {
+  display: flex;
+  align-items: center;
+  height: 20px;
+  width: 335px;
+  gap: 183px;
+}
+
+.adress-and-phone {
+  display: flex;
+  gap: 20px;
+  width: 100px;
+  height: 100%;
+
+  a {
+    display: block;
+    height: 100%;
+  }
+
+  .adress-and-phone-punkts {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.mail {
+  background-image: url(image/Mail.svg);
+}
+
+.email {
+  display: none;
+}
+
+.phone {
+  background-image: url(image/Vector.svg);
+}
+
+.phone-number {
+  display: none;
+}
+
+.location {
+  background-image: url(image/Location.svg);
+}
+
+.location-adress {
+  display: none;
+}
+
+.language {
+  gap: 5px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  color: white;
+  cursor: pointer;
+}
+
+.arrow {
+  background-image: url(image/Arrow.svg);
+  width: 7px;
+  height: 4px;
+}
+
+.navbar-mobile {
+  max-width: 375px;
+  width: 100%;
+  height: 70px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar-mobile-text {
+  height: 40px;
+  width: 100%;
+}
+
+.navbar-mobile-icons {
+  padding: 0px 15px;
+  display: flex;
+  align-items: center;
+  gap: 145px;
+  height: 100%;
+}
+
+.logo {
+  width: 90px;
+  height: 100%;
+
+  a {
+    display: block;
+  }
+}
+
+.call-and-menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 110px;
+  height: 34px;
+}
+
+.call-button {
+  height: 100%;
+  width: 40px;
+  background-image: url(image/Call-Button.svg);
+
+  a {
+    display: block;
+    height: 100%;
+  }
+}
+
+.menu-button {
+  width: 30px;
+  height: 30px;
+  background-image: url(image/navbar-menu.svg);
+  cursor: pointer;
+}
+
+.navbar-desktop {
+  display: none;
+}
+
+// desktop
+
+@media (min-width: 1440px) {
+  .top-navbar {
+    max-width: 1420px;
+    font-family: "Poppins";
+    font-size: 14px;
+  }
+
+  .top-navbar-text {
+    width: 1390px;
+    height: 25px;
+    justify-content: space-between;
+  }
+
+  .adress-and-phone {
+    width: 770px;
+    gap: 10px;
+
+    .adress-and-phone-punkts {
+      width: 25px;
+      height: 25px;
+      background-size: 24px;
+      background-repeat: no-repeat;
+    }
+
+    a {
+      text-decoration: none;
+      color: white;
+    }
+
+    .email {
+      display: flex;
+      margin-right: 20px;
+      align-items: center;
+    }
+
+    .phone-number {
+      display: flex;
+      margin-right: 20px;
+      align-items: center;
+    }
+
+    .location-adress {
+      display: flex;
+      margin-right: 20px;
+      align-items: center;
+    }
+  }
+
+  .language {
+    font-size: 14px;
+  }
+
+  .navbar-mobile {
+    display: none;
+  }
+  .navbar-desktop {
+    max-width: 1420px;
+    height: 85px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+  }
+
+  .navbar-desktop-text {
+    width: 100%;
+    height: 55px;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 20px;
+  }
+
+  .desktop-menu-call {
+    display: flex;
+    align-items: center;
+    gap: 101px;
+  }
+
+  .desktop-menu {
+    ul {
+      display: flex;
+      gap: 40px;
+      list-style-type: none;
+      padding: 0px;
+    }
+
+    a {
+      text-decoration: none;
+      color: black;
+
+      &:hover {
+        color: #00730c;
+      }
+    }
+  }
+
+  .desktop-call-button {
+    width: 170px;
+    height: 50px;
+    background-image: url(image/laptop-call-button.svg);
+  }
+}
