@@ -140,6 +140,100 @@ body {
   display: none;
 }
 
+.mobile-hero {
+  max-width: 375px;
+  width: 100%;
+  height: 719px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(to right, #83ca8a, 60%, #fbf6ee);
+  padding: 0px 15px;
+}
+
+.mh-image {
+  height: 240px;
+}
+
+.mh-content {
+  margin-top: 48px;
+}
+
+.mh-text {
+  font-size: 14px;
+  margin-bottom: 40px;
+}
+
+.mh-text-heading {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  p {
+    margin: 0px;
+    color: #00730c;
+  }
+}
+
+.mh-text-subheading {
+  display: flex;
+  gap: 5px;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.mh-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 19px;
+
+  button {
+    width: 310px;
+    height: 44px;
+    border-radius: 5px;
+    border: none;
+    background-color: #00730c;
+    font-family: "Nunito";
+    font-size: 16px;
+    font-weight: 700;
+    color: white;
+  }
+
+  .see-how {
+    color: #00730c;
+    text-decoration: none;
+    background-image: url(image/mh-green-right-arrow.svg);
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: right;
+    padding-right: 30px;
+  }
+}
+
+.mh-happy {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 41px;
+  font-size: 10px;
+
+  .tag {
+    padding: 8px 10px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: linear-gradient(#fbf6ee, 90%, #a3e0a9);
+    border-radius: 25px;
+  }
+
+  span {
+    font-size: 12px;
+    font-weight: 700;
+  }
+}
+
 // desktop
 
 @media (min-width: 1440px) {
@@ -239,10 +333,11 @@ body {
     }
 
     .arrow {
+      padding-right: 15px;
       background-image: url(image/arrow-black.svg);
       background-repeat: no-repeat;
       background-position-y: center;
-      background-position-x: 30px;
+      background-position-x: right;
     }
   }
 
@@ -250,5 +345,14 @@ body {
     width: 170px;
     height: 50px;
     background-image: url(image/laptop-call-button.svg);
+
+    a {
+      display: block;
+      height: 50px;
+    }
+  }
+
+  .mobile-hero {
+    display: none;
   }
 }
