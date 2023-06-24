@@ -216,6 +216,12 @@ body {
   .desktop-menu a:hover {
     color: #00730c;
   }
+  .desktop-menu .arrow {
+    background-image: url(image/arrow-black.svg);
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: 30px;
+  }
   .desktop-call-button {
     width: 170px;
     height: 50px;
