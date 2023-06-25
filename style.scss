@@ -10,8 +10,9 @@ body {
 
 .container {
   min-width: 375px;
+  margin: 0 auto;
 }
-
+// ---------------top navbar---------------
 .top-navbar {
   max-width: 375px;
   width: 100%;
@@ -87,7 +88,7 @@ body {
   width: 7px;
   height: 4px;
 }
-
+// ----------------navbar mobile----------------
 .navbar-mobile {
   max-width: 375px;
   width: 100%;
@@ -149,7 +150,7 @@ body {
 .navbar-desktop {
   display: none;
 }
-
+// --------------mobile hero----------------
 .mobile-hero {
   overflow: hidden;
   max-width: 375px;
@@ -159,6 +160,7 @@ body {
   display: flex;
   flex-direction: column;
   background: linear-gradient(to right, #83ca8a, 60%, #fbf6ee);
+
   padding: 0px;
 }
 
@@ -214,7 +216,7 @@ body {
     color: white;
   }
 
-  .see-how {
+  .mh-see-how {
     color: #00730c;
     text-decoration: none;
     background-image: url(image/mh-green-right-arrow.svg);
@@ -232,7 +234,7 @@ body {
   margin-top: 41px;
   font-size: 10px;
 
-  .tag {
+  .mh-tag {
     padding: 8px 10px;
     display: flex;
     align-items: center;
@@ -247,9 +249,23 @@ body {
   }
 }
 
+.mh-background-flower {
+  width: 83px;
+  height: 118px;
+  background-image: url(image/mh-flower.svg);
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 700px;
+}
+
+.desktop-hero {
+  display: none;
+}
+
 // desktop
 
 @media (min-width: 1440px) {
+  // --------------top navbar-------------
   .top-navbar {
     max-width: 1420px;
     font-family: "Poppins";
@@ -300,7 +316,7 @@ body {
   .language {
     font-size: 14px;
   }
-
+  //---------------desktop navbar-----------
   .navbar-mobile {
     display: none;
   }
@@ -319,7 +335,14 @@ body {
     height: 55px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 15px 20px;
+  }
+
+  .desktop-logo {
+    a {
+      display: block;
+    }
   }
 
   .desktop-menu-call {
@@ -364,8 +387,105 @@ body {
       height: 50px;
     }
   }
-
+  // -------------desktop hero---------------
   .mobile-hero {
     display: none;
+  }
+
+  .desktop-hero {
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    max-width: 1420px;
+    margin: auto;
+    height: 719px;
+    padding-top: 46px;
+    padding-left: 20px;
+    background: linear-gradient(to right, #83ca8a, 60%, #fbf6ee);
+  }
+
+  .dh-text-and-button {
+    width: 696px;
+    padding-right: 40px;
+    margin-bottom: 50px;
+  }
+
+  .dh-text {
+    font-size: 18px;
+    color: #676767;
+    margin-bottom: 50px;
+  }
+
+  .dh-text-subheading {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 16px;
+    font-weight: 700;
+  }
+
+  .dh-text-heading {
+    font-size: 58px;
+    font-weight: 800;
+    margin-bottom: 20px;
+    color: black;
+
+    p {
+      color: #00730c;
+    }
+  }
+
+  .dh-button {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 30px;
+    font-size: 18px;
+
+    button {
+      width: 175px;
+      height: 50px;
+      background-color: #00730c;
+      color: white;
+      border-radius: 5px;
+      border: none;
+      font-family: "Nunito";
+      font-size: 18px;
+    }
+
+    .dh-see-how {
+      text-decoration: none;
+      color: #676767;
+      background-image: url(image/dh-grey-arrow-right.svg);
+      background-repeat: no-repeat;
+      background-position-y: center;
+      padding-right: 30px;
+      background-position-x: right;
+    }
+  }
+
+  .dh-happy {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .dh-tag {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    width: 149px;
+    height: 50px;
+    font-weight: 700;
+  }
+
+  .tag-number {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 45px;
+    border-radius: 50px;
+    background: linear-gradient(#fbf6ee, 90%, #a3e0a9);
   }
 }
