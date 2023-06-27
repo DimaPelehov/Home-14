@@ -10,7 +10,7 @@ body {
 
 .container {
   min-width: 375px;
-  margin: 0 auto;
+  margin: auto;
 }
 
 .top-navbar {
@@ -361,11 +361,15 @@ body {
     display: flex;
     align-items: center;
     max-width: 1420px;
+    width: 100%;
     margin: auto;
     height: 719px;
     padding-top: 46px;
     padding-left: 20px;
     background: linear-gradient(to right, #83ca8a, 60%, #fbf6ee);
+  }
+  .dh-content {
+    width: 50%;
   }
   .dh-text-and-button {
     width: 696px;
