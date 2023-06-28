@@ -163,7 +163,6 @@ body {
   margin: auto;
   display: flex;
   flex-direction: column;
-  background: linear-gradient(to right, #83ca8a, 60%, #fbf6ee);
   padding: 0px;
 }
 
@@ -469,7 +468,6 @@ p {
     height: 719px;
     padding-top: 46px;
     padding-left: 20px;
-    background: linear-gradient(to right, #83ca8a, 60%, #fbf6ee);
   }
   .dh-content {
     max-width: 50%;
