@@ -8,6 +8,14 @@ body {
   font-family: "Nunito";
 }
 
+.fon-top-navbar {
+  background-color: #0c4b35;
+}
+
+.fon-hero {
+  background: linear-gradient(to right, #83ca8a, 60%, #fbf6ee);
+}
+
 .container {
   min-width: 375px;
   margin: auto;
@@ -182,6 +190,7 @@ body {
 .mh-text-heading p {
   margin: 0px;
   color: #00730c;
+  font-size: 22px;
 }
 
 .mh-text-subheading {
@@ -250,6 +259,100 @@ body {
 }
 
 .desktop-hero {
+  display: none;
+}
+
+.mobile-services {
+  max-width: 375px;
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+  padding: 0px 15px;
+  gap: 30px;
+}
+
+.mob-services-text {
+  text-align: center;
+}
+.mob-services-text h2 {
+  margin-bottom: 15px;
+}
+.mob-services-text span {
+  color: #00730c;
+}
+
+p {
+  color: #676767;
+  font-size: 14px;
+}
+
+.mob-services-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.mobile-card {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  border-radius: 3px;
+  box-shadow: 0px 3px 15px 8px rgb(243, 238, 238);
+  background-image: url(image/mobile-card-background.svg);
+  background-repeat: no-repeat;
+}
+
+.mobile-card-image {
+  width: 74px;
+  height: 50px;
+  background-repeat: no-repeat;
+}
+
+.first {
+  background-image: url(image/mob-card-image1.svg);
+}
+
+.second {
+  background-image: url(image/mob-card-image2.svg);
+}
+
+.third {
+  background-image: url(image/mob-card-image3.svg);
+}
+
+.fourth {
+  background-image: url(image/mob-card-image4.svg);
+}
+
+.fifth {
+  background-image: url(image/mob-card-image5.svg);
+}
+
+.sixth {
+  background-image: url(image/mob-card-image6.svg);
+}
+
+.seventh {
+  background-image: url(image/mob-card-image7.svg);
+}
+
+.eighth {
+  background-image: url(image/mob-card-image8.svg);
+}
+
+.mobile-card-text {
+  width: 100%;
+}
+.mobile-card-text h3 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.desktop-services {
   display: none;
 }
 
@@ -369,11 +472,12 @@ body {
     background: linear-gradient(to right, #83ca8a, 60%, #fbf6ee);
   }
   .dh-content {
-    width: 50%;
+    max-width: 50%;
+    min-width: 50%;
+    padding-right: 40px;
   }
   .dh-text-and-button {
-    width: 696px;
-    padding-right: 40px;
+    width: 100%;
     margin-bottom: 50px;
   }
   .dh-text {
@@ -444,5 +548,79 @@ body {
     height: 45px;
     border-radius: 50px;
     background: linear-gradient(#fbf6ee, 90%, #a3e0a9);
+  }
+  .mobile-services {
+    display: none;
+  }
+  .desktop-services {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    max-width: 1420px;
+    width: 100%;
+    margin: auto;
+    padding: 100px 20px;
+  }
+  .desktop-services-text {
+    width: 70%;
+    text-align: center;
+  }
+  .desktop-services-text h2 {
+    margin-bottom: 30px;
+    font-size: 45px;
+    font-weight: 800;
+  }
+  .desktop-services-text span {
+    color: #00730c;
+  }
+  .desktop-services-text p {
+    font-size: 18px;
+    line-height: 30px;
+  }
+  .desktop-services-cards {
+    width: 100%;
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+  .desktop-card {
+    flex: 1 1 calc(25% - 30px);
+    width: 25%;
+    height: 366px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 43px;
+    gap: 50px;
+    border-radius: 5px;
+    background-image: url(image/desktop-card-background.svg);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    box-shadow: 0px 3px 15px 8px rgb(243, 238, 238);
+  }
+  .first-child {
+    background-color: #00730c;
+  }
+  .first-child h3,
+  .first-child p {
+    color: white;
+  }
+  .desktop-card-image {
+    width: 70px;
+    height: 70px;
+    background-repeat: no-repeat;
+    background-size: 70px;
+  }
+  .white-icon {
+    background-image: url(image/desktop-card-image1.svg);
+  }
+  .desktop-card-text {
+    text-align: center;
+  }
+  .desktop-card-text h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
   }
 }/*# sourceMappingURL=style.css.map */
